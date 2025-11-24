@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <title>Shoreline Public Access</title>
+                <onlink>https://geodata.hawaii.gov/arcgis/rest/services/CoastalMarine/MapServer/25</onlink>
+                <onlink>https://files.hawaii.gov/dbedt/op/gis/data/shoreline_public_access_oah.pdf</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>[Metadata]  Description: Location of public shoreline access ways on Oahu as of 2008. June 2024:  Hawaii Statewide GIS Program staff removed extraneous fields 
+that had been added as part of a 2016 GIS database conversion and were
+ no longer needed.  For additional information, please refer to metadata at https://files.hawaii.gov/dbedt/op/gis/data/shoreline_public_access_oah.pdf or contact Hawaii Statewide GIS Program, Office of Planning, State of Hawaii; PO Box 2359, Honolulu, Hi. 96804; (808) 587-2846; email: gis@hawaii.gov; Website: https://planning.hawaii.gov/gis.Source : NOAA Fisheries, City and County of Honolulu’s Department of Planning &amp;amp; Permitting, and the State of Hawaii Office of Planning.</abstract>
+            <purpose>This dataset contains the locations of Oahu public shoreline access ways, as of 2008.</purpose>
+        </descript>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Shoreline Public Access</themekey>
+                <themekey>Hawaii</themekey>
+                <themekey>Oahu</themekey>
+                <themekey>NOAA</themekey>
+                <themekey>HawaiiStateGIS</themekey>
+                <themekey>histategis</themekey>
+                <themekey>Ocean</themekey>
+                <themekey>PROW</themekey>
+                <themekey>BROW</themekey>
+                <themekey>Beach Access</themekey>
+                <themekey>Right of Way</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>State of Hawaii Terms of Use. 
+
+
+
+The
+ contents of this web page are public domain and to the extent indicated
+ otherwise in the Terms of Use, are exempt from Terms of Use policy 
+restrictions.There are no expressed warranties associated with the 
+release of this data or product. Specifically, no warranty is made that 
+the GIS data or any subsequent updates will be error free and no 
+warranty is made regarding the positional or thematic accuracy of the 
+GIS data. The GIS data and any features depicted do not represent or 
+confer any legal rights, privileges, benefits, boundaries or claims of 
+any kind. The Office of Planning and Sustainable Development encourages users to report any 
+discrepancies or errors found. 
+ Contact: Hawaii Statewide GIS Program, Office of Planning and 
+Sustainable Development, State of Hawaii; PO Box 2359, Honolulu, Hi. 
+96804; (808) 587-2846; email: gis@hawaii.gov. Website: https://planning.hawaii.gov/gis.</useconst>
+        <datacred>Hawaii Statewide GIS Program, NOAA Fisheries, C&amp;C of Honolulu DPP</datacred>
+    </idinfo>
+    <metainfo>
+        <metd>20191005</metd>
+        <metc>
+            <cntinfo>
+                <!--no contact person or organization name available-->
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</met
