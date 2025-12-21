@@ -1,30 +1,31 @@
 # Coastal Access & Amenities Analysis of Oʻahu, Hawaiʻi
 
-This project analyzes shoreline public access points on the island of Oʻahu using geospatial data, Python, and GIS workflows. The study integrates spatial access point geometry with detailed amenity attributes to evaluate access quality, regional distribution, and service availability across the island’s coastline.
+## Overview
 
-The goal of this project is to demonstrate applied geospatial analysis skills relevant to natural resource consulting, environmental planning, and coastal management.
+This project presents a geospatial analysis of **shoreline public access points and amenities on the island of Oʻahu**, using Python-based GIS workflows. It evaluates shoreline accessibility by examining the availability and distribution of key public amenities that support safe, usable, and equitable coastal access.
+
+By combining spatial data processing, amenity-level analysis, and interactive mapping, the project highlights regional patterns of infrastructure provision and identifies areas that are relatively well-served or under-served across Oʻahu’s coastline.
 
 ---
 
-## Objectives
+## Project Objectives
 
-1. Integrate shoreline public access geospatial data with amenity attributes.  
-2. Create an amenity-based quality scoring system for each access point.  
-3. Analyze access density and amenity distribution across Oʻahu.  
-4. Produce professional cartographic outputs and an interactive map.  
-5. Provide interpretable insights regarding coastal access infrastructure.
+- Classify shoreline public access points into four primary coastal regions  
+- Standardize and encode amenity data for quantitative analysis  
+- Create a composite **amenity score (0–7)** for each access point  
+- Compare amenity availability across coastline regions  
+- Produce clear static visualizations and interactive web maps  
+- Demonstrate applied geospatial analysis and spatial reasoning skills  
 
 ---
 
 ## Data Sources
 
-### 1. Shoreline Public Access Dataset (2024)  
-Hawaiʻi Statewide GIS Program  
-- Geometry: Shapefile set (`Shoreline_Public_Access.*`)  
-- Attributes: Amenities CSV (`Shoreline_Public_Access.csv`)
+### Shoreline Public Access Dataset (2024)  
+**Hawaiʻi Statewide GIS Program**
 
-### 2. Supplemental Layers
-- Oʻahu coastline shapefile   
+- Geometry: ESRI Shapefile (`Shoreline_Public_Access.*`)
+- Attributes: Public amenity indicators  
 
 All raw datasets are stored in `/data/raw/`.
 
@@ -32,47 +33,51 @@ All raw datasets are stored in `/data/raw/`.
 
 ## Methods
 
-### 1. Data Cleaning
-- Load shoreline public access shapefile  
-- Load amenity attributes from CSV  
-- Standardize amenity fields  
-- Merge geospatial and tabular data on a unique site identifier  
-- Export cleaned dataset to `/data/processed/`
+### 1. Spatial Preparation & Regional Classification
+- Load shoreline public access shapefile
+- Reproject to WGS84 for mapping consistency
+- Assign access points to one of four coastal regions:
+  - North Shore  
+  - Windward Coast  
+  - South Shore  
+  - Leeward Coast  
+- Apply targeted manual overrides to improve geographic accuracy
 
-### 2. Amenity Quality Score
+---
 
-Each access point receives one point for each available facility:
+### 2. Amenity Encoding & Scoring
+Each amenity is encoded as a binary indicator (0/1):
 
 - Restroom  
-- Shower  
+- Showers  
 - Picnic facilities  
-- Trash receptacle  
+- Trash receptacles  
 - Drinking water  
 - Phone  
 - Lifeguard presence  
 
-**Amenity Score = Total points (0–7)**
+**Amenity Score = Sum of available amenities (0–7)**
 
-### 3. Access Density Analysis
+---
 
-- Count access points per region or coastline segment  
-- Generate spatial density visualizations  
-- Identify high- and low-access areas  
+### 3. Exploratory & Regional Analysis
+- Evaluate island-wide amenity availability
+- Analyze distribution of amenity scores across access points
+- Compare mean amenity availability by coastal region
+- Identify patterns of well-served vs under-served shoreline areas
 
-### 4. Amenities Analysis
+---
 
-- Distribution of amenities across access points  
-- Region-level comparisons  
-- Clustering of high-score vs low-score sites  
-- Identification of underserved coastline segments  
-
-### 5. Mapping and Visualization
-
-- Static GIS outputs using GeoPandas and Matplotlib  
-- Interactive web map (Folium) with:  
-  - Clickable access points  
-  - Amenity popups  
-  - Color-coded scores  
+### 4. Mapping & Visualization
+- Static plots using Matplotlib:
+  - Amenity frequency charts
+  - Amenity score distribution histograms
+  - Regional comparison visualizations
+  - Amenity availability heatmap by coastline
+- Interactive Folium maps featuring:
+  - Region-based thematic mapping
+  - Amenity score–based thematic mapping
+  - Hover tooltips and detailed popups per access point
 
 Maps are exported to `/outputs/maps/`.
 
@@ -80,18 +85,15 @@ Maps are exported to `/outputs/maps/`.
 
 ## Project Outputs
 
-### Static Maps
-- Access point density map  
-- Amenity score distribution map  
-- Region-level access summaries  
-
-### Interactive Map
-`folium_interactive_map.html` (stored in `/outputs/maps/`)
+### Interactive Maps
+- `shoreline_access_by_region.html`
+- `shoreline_access_by_amenity_score.html`
 
 ### Analytical Figures
-- Amenity frequency plots  
-- Score distribution histograms  
-- Regional comparison charts  
+- Amenity availability bar charts  
+- Amenity score histograms  
+- Regional comparison plots  
+- Amenity availability heatmap  
 
 ---
 
@@ -112,6 +114,6 @@ Maps are exported to `/outputs/maps/`.
 
 **Sarah E.**  
 M.S. CyberGIS & Geospatial Data Science (in progress)  
-Data Analyst and aspiring GIS/Remote Sensing professional  
+Data Analyst with a focus on GIS, spatial analysis, and environmental data science  
 
 
